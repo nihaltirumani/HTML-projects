@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Python Page</title>
+    </head>
+    <link rel="stylesheet" href="Styles theme1.css">
+    <body>
+        <a href="Python page2.html"><br><b>Go back</b></a>
+        <h1>More code</h1>
+        <h2 id="textlink">You can copy the code and <a href="https://www.w3schools.com/python/trypython.asp?filename=demo_oper_ass2" target="_blank" ><b>paste here.</b></a></h2>
+        <div class="darkbluebox">        
+            <h3>1. Caluculator</h3>
+            <pre>
+            answer=input("what calculation want to do? ")
+            if answer=="addition":
+                num1=int(input("first number "))
+                num2=int(input("second number "))
+                print(num1+num2)
+            if answer=="subtraction":
+                num1=int(input("first number "))
+                num2=int(input("second number "))
+                print(num1-num2)
+            if answer=="multiplycation":
+                num1=int(input("first number "))
+                num2=int(input("second number "))
+                print(num1*num2)
+            if answer=="division":
+                num1=int(input("first number "))
+                num2=int(input("second number "))
+                print(num1/num2)
+                    </pre>
+                    <p>First, it ask about what type of calculation the user want. The second step is it takes what type caluculation and asks first number and second number. And lastly, it processes and gives the answer.</p>
+                </div>
+
+        <div class="bluebox">
+            <h3>2. Table maker</h3>
+        <pre>
+table_number=int(input("What table do you want to be generated? "))
+table_times=int(input("How many times? "))
+index=0
+
+while not index==table_times:
+    print(table_number,"*",index+1,"=",table_number*(index+1))
+    index+=1
+        </pre>
+        <p>It questions the user for what table should be generated and how many times. And it takes the input and makes the table. It uses a loop to generate a number of times the table.</p>
+        </div>
+
+        <div class="midbluebox">
+        <h3>3. Password generator</h3>
+        <pre>
+# Importing modules
+import random
+
+
+# Varibles of different characters
+
+lowercase_alphabets = "abcdefghijklmnopqrstuvwxyz"
+uppercase_alphabets = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+numbers = "0123456789"
+symbols = "!@#$%^&*()_-+=\"{ }'[]:;\<>,.?/"
+
+
+# Other varibles for generating password
+
+index = 0
+password = ""
+
+
+# Merge all the characters into one list
+
+all_characters = list(lowercase_alphabets + uppercase_alphabets + numbers + symbols)
+
+
+# Asking the user for character limit and generating the output
+
+character_range = int(input("Character range for password (limitations from 30) : "))
+
+while index < character_range:
+    try:
+        password = password + all_characters[random.randint(0, len(all_characters))]
+    except IndexError:
+        print("Character limit is above 30.")
+        exit()
+    index += 1
+
+print("Your password is:", password)
+        </pre>
+        <p>The programme ask the password lenght. After the user given, the programme creates password using the stored characters.</p>
+        </div>
+
+<div class="darkbluebox">
+    <h3>4. Guess the number</h3>
+    <pre>
+# Importing varibles.
+import random
+import nMods as n
+
+# Variables.
+random_number = 0
+user_number = 0
+trys = 0
+
+# Introduction.
+n.printsec("Welcome to guess the number!.", 1)
+n.printsec("A random number is chosen.", 1)
+n.printsec("You have to guess the number.", 1)
+n.printsec("So, get ready in...", random.random() + random.random())
+print("NOW!!")
+
+# Game loop.
+def repeat():
+global trys
+user_number = int(input("Enter your number: "))
+
+if user_number == random_number:
+    print("You won!")
+    print("The correct answer is", random_number)
+    print("You did", trys, "trys")
+elif user_number > random_number:
+    print("Your guessed number is above.")
+    trys += 1
+    repeat()
+elif user_number < random_number:
+    print("Your guessed number is below.")
+    trys += 1
+    repeat()
+
+random_number = random.randint(1, 100)
+repeat()
+    </pre>
+    <p>What it does that is it takes a number between 1 to 100 and asks the user to guess it. If the guessed number was greater than the number, it says the guessed number is greater. If the guessed number was smaller than the number, it says the guessed number is smaller.</p>
+    
+</body>
+</html>
+</div>
