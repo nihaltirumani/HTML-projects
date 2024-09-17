@@ -1,0 +1,21 @@
+body{
+    margin: 10px;
+    background-color: black;
+    font-size: large;
+    font-family: monospace;
+    color: azure;
+}
+
+a{
+    color: cornflowerblue;
+    text-decoration: none;
+}
+
+.img{
+    height: 25%;
+    width: 25%;
+}
+
+div{
+    display: flex;
+}
