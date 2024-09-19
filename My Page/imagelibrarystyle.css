@@ -4,6 +4,7 @@ body{
     font-size: large;
     font-family: monospace;
     color: azure;
+<<<<<<< HEAD
     text-shadow: 0 0 10px rgb(190, 180, 255);
 }
 
@@ -30,6 +31,18 @@ body{
 .img:hover{
     width: 365px;
     height: 365px;
+=======
+}
+
+a{
+    color: cornflowerblue;
+    text-decoration: none;
+}
+
+.img{
+    height: 25%;
+    width: 25%;
+>>>>>>> d7700396dceadaf8341da338cd9d2465deda78f9
 }
 
 div{
