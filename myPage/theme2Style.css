@@ -2,12 +2,12 @@
  body{
     margin: 10px;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: coral;
+    background-color: #66b3ff;
  }
 
  a:link, a:visited {
     transition-duration: 0.4s;
-    background-color: #4c79ff;
+    background-color: #ff4c4c;
     color: rgb(255, 255, 255);
     padding: 0px 5px 10px 5px;
     text-align: center;
@@ -18,24 +18,24 @@
   }
   
   a:hover, a:active {
-    background-color: rgb(0, 64, 255);
+    background-color: rgb(255, 0, 0);
     size: 10px;
   }
 
 #textlink a:link {
-    color: #4c79ff;
+    color: #ff4c4c;
     background-color: transparent;
     text-decoration: none;
   }
   
 #textlink a:visited {
-    color: #4c79ff;
+    color: #ff4c4c;
     background-color: transparent;
     text-decoration: none;
   }
   
 #textlink a:hover {
-    color:rgb(0, 64, 255);
+    color:rgb(255, 0, 0);
     background-color: transparent;
     text-decoration: underline;
   }
