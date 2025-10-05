@@ -28,6 +28,12 @@
     text-decoration: none;
   }
   
+#textlink a:visited {
+    color: #4c79ff;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
 #textlink a:hover {
     color:rgb(0, 64, 255);
     background-color: transparent;
