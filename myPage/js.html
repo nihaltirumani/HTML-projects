@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap" rel="stylesheet">
+    <title>Javascript</title>
+    <style>
+        body{
+            font-size: 2em;
+            text-align: center;
+            color: rgb(40, 172, 255);
+            background: linear-gradient(to bottom, #FFFFFF, rgb(119, 192, 255));
+            font-family: 'Alan Sans', sans-serif;
+        }
+
+        button{
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-family: 'Alan Sans', sans-serif;
+            font-size: 20px;
+            border-width: 4px;
+            border-color: rgb(40, 172, 255);
+            background-color: rgb(119, 192, 255);
+            color: rgb(40, 172, 255);
+            transition: all 0.3s ease;
+        }
+
+        button:hover{
+            border-color: rgb(119, 192, 255);
+            background-color: rgb(40, 172, 255);
+            color: rgb(119, 192, 255);
+        }
+        a {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            text-decoration: none;
+            font-size: 1em;
+            color: rgb(40, 172, 255);
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: rgb(119, 192, 255);
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" >Go Back</a>
+
+    <h1>Quiz Game Made With JS</h1>
+    <p>Which programming language is primarily used to make web pages interactive?</p>
+
+    <button id="b1">HTML</button>
+    <button id="b2">CSS</button>
+    <button id="b3">Javascript</button>
+    <button id="b4">Python</button>
+    <p id="ans"></p>
+
+    <script>
+        const b1 = document.getElementById("b1");
+        const b2 = document.getElementById("b2");
+        const b3 = document.getElementById("b3");
+        const b4 = document.getElementById("b4");
+        const ans = document.getElementById("ans");
+
+        b1.onclick = function(){
+            ans.textContent = "Ops! Wrong one!";
+            ans.style.color = "rgb(255, 94, 94)";
+        }
+        b2.onclick = function(){
+            ans.textContent = "Ops! Wrong one!";
+            ans.style.color = "rgb(255, 94, 94)";
+        }
+        b3.onclick = function(){
+            ans.textContent = "Yaay! You won!";
+            ans.style.color = "rgb(196, 255, 119)"
+        }
+        b4.onclick = function(){
+            ans.textContent = "Ops! Wrong one!";
+            ans.style.color = "rgb(255, 94, 94)";
+        }
+    </script>
+</body>
+</html>
